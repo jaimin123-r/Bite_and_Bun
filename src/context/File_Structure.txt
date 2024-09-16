@@ -1,0 +1,34 @@
+In Components
+
+1) About  - Only About Part with Mobile
+
+2) Auth - Only Auth Part with Mobile
+
+3) Cart - Only Cart Part with Mobile
+
+4) contact - Only Contact Part with Mobile
+
+5) footer - Only footer Part with Mobile
+
+6) Header - Only Header Part with Mobile
+
+7) Home - Home Part, Slider, Some info with Mobile
+
+8) Menu - MenuItems , Menu with Mobile
+
+9)MenuBar - MobileNavigation Bar, Stores Locations, settings, Backbutton, My orders
+
+9) MobileNav -  Only Mobile Navigation
+
+10) Profile - Only Profile Part with Mobile
+
+11) Search - MenuItes, Search with Mobile
+
+12) Setting - Only Setting with Mobile
+
+
+In context 
+
+1) CartContext - cart, addToCart, removeFromCart, clearCart, itemCount with Mobile
+
+2) Ex - Connections with firebase.
