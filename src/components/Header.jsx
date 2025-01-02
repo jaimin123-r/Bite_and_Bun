@@ -23,7 +23,7 @@ const Header = () => {
     <header className=" pb-2 pt-4 md:pb-2 md:pt-4 shadow-lg fixed w-full bg-white z-10 text-yellow-400">
       <div className="container mx-auto px-4 flex justify-between">
         <motion.h1 
-          className="cursor-pointer text-3xl font-bold text-center mb-4 md:mt-3 m-auto md:m-0 md:mb-5 border-4 border-black rounded-md p-0.5 bg-black text-black shadow-xl"
+          className="cursor-pointer text-3xl font-bold text-center mb-4 md:mt-3 m-auto md:m-0 md:mb-5 border-4 border-black rounded-md p-0.5 bg-black text-yellow-400 shadow-xl"
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
@@ -63,7 +63,7 @@ const Header = () => {
  
 const NavLink = ({ to, children }) => (
   <motion.li whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
-    <Link to={to} className="hover:text-gray-600 transition-colors underline ">{children}</Link>
+    <Link to={to} className="hover:text-gray-600 transition-colors underline text-black">{children}</Link>
   </motion.li>
 );
 
