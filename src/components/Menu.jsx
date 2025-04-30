@@ -42,7 +42,7 @@ const Menu = () => {
 
   return (
     <div className="container mx-auto px-4 py-8">
-      <h1 className="text-3xl font-bold mb-8 text-center">Our Menu</h1>
+      <h1 className="text-3xl font-bold mb-8 text-center text-amber-700">Our Menu</h1>
       <div className="mb-6">
         <button
           onClick={() => setFilter('All')}

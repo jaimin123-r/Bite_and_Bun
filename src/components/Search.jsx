@@ -39,7 +39,7 @@ const Search = () => {
 
   return (
     <div className="container mx-auto px-4 py-8">
-      <h1 className="text-3xl font-bold mb-8 text-center">Search Our Menu</h1>
+      <h1 className="text-3xl font-bold mb-8 text-center text-amber-700">Search Our Menu</h1>
       <input
         type="text"
         placeholder="Search for an item..."

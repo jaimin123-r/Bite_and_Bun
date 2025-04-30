@@ -13,46 +13,22 @@ const Home = () => {
       transition={{ duration: 0.5 }}
     >
       <div className="container mx-auto">
-        {/* <h1 className="text-4xl font-bold mb-8 text-center">Welcome to Bite and Bun</h1> */}
         <Slider /> <br />
-        <FeaturedSection src="Bevrages.avif" name='Diffrent Bevrages'/>
-        <div className='hidden md:block'  >
+        <FeaturedSection src="Beverages.jpg" name='Diffrent Bevrages'/>
+        <div>
         <FeaturedSection2/>
         </div>
-        <FeaturedSection src="Fries_burger.avif" name='savor the flavor'/>
-        {/* <PopularCombos /> */}
+        <FeaturedSection src="b-29.jpg" name='savor the flavor'/>  
       </div>
       <br /> <br />
     </motion.div>
   );
 };
 
-//This Not Used
-const ImageGallery = () => {
-  const images = [
-    "https://placehold.co/600x400?text=Burger+1",
-    "https://placehold.co/600x400?text=Burger+2",
-    "https://placehold.co/600x400?text=Burger+3",
-    "https://placehold.co/600x400?text=Burger+4",
-  ];
-
-  return (
-    <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
-      {images.map((src, index) => (
-        <img
-          key={index}
-          src={src}
-          alt={`Gallery image ${index + 1}`}
-          className="w-full h-48 object-cover rounded-lg shadow-md"
-        />
-      ))}
-    </div>
-  );
-};
 
 const FeaturedSection = (props) => {
   return (
-    <div className="flex flex-col md:flex-row items-center mb-12">
+    <div className="flex flex-col md:flex-row items-center mb-12 p-4">
       <div className="md:w-1/2 mb-6 md:mb-0">
         <img
           src={props.src}
@@ -79,7 +55,7 @@ const FeaturedSection = (props) => {
 };
 const FeaturedSection2 = () => {
   return (
-    <div className="flex flex-col md:flex-row items-center mb-12">
+    <div className="flex flex-col md:flex-row items-center mb-12 p-4">
       <div className="md:w-1/2 md:pl-8">
         <h2 className="text-3xl font-bold mb-4">Try New Item</h2>
         <p className="mb-6">
@@ -94,9 +70,9 @@ const FeaturedSection2 = () => {
           Explore Menu
         </Link>
       </div>
-      <div className="md:w-1/2 mb-6 md:mb-0">
+      <div className="md:w-1/2 mt-6 md:mb-0">
         <img
-          src="Hotdog.avif"
+          src="b-30.jpg"
           alt="Featured burger"
           className="w-full h-auto rounded-lg shadow-md"
         />
@@ -105,70 +81,21 @@ const FeaturedSection2 = () => {
   );
 };
 
-const PopularCombos = () => {
-  const combos = [
-    {
-      name: "Classic Combo",
-      price: "$9.99",
-      image: "https://placehold.co/300x200?text=Classic+Combo",
-    },
-    {
-      name: "Double Trouble",
-      price: "$12.99",
-      image: "https://placehold.co/300x200?text=Double+Trouble",
-    },
-    {
-      name: "Veggie Delight",
-      price: "$10.99",
-      image: "https://placehold.co/300x200?text=Veggie+Delight",
-    },
-  ];
-
-  return (
-    <div className="mb-12">
-      <h2 className="text-3xl font-bold mb-6">Most Popular Combos</h2>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-        {combos.map((combo, index) => (
-          <div
-            key={index}
-            className="bg-white rounded-lg shadow-md overflow-hidden"
-          >
-            <img
-              src={combo.image}
-              alt={combo.name}
-              className="w-full h-48 object-cover"
-            />
-            <div className="p-4">
-              <h3 className="text-xl font-bold mb-2">{combo.name}</h3>
-              <p className="text-gray-600 mb-4">{combo.price}</p>
-              <button className="bg-yellow-400 text-black font-bold py-2 px-4 rounded hover:bg-yellow-500 transition-colors duration-300">
-                Order Now
-              </button>
-            </div>
-          </div>
-        ))}
-      </div>
-    </div>
-  );
-};
-
-// src/components/Slider.jsx
-
 const slides = [
   {
     src: heroBG,
     alt: "Slide 1",
   },
   {
-    src: "onion_ring.jpg",
+    src: "b-28.jpg",
     alt: "Slide 2",
   },
   {
-    src: "wrap.jpg",
+    src: "b-27.jpg",
     alt: "Slide 3",
   },
   {
-    src: "three_burger.jpg",
+    src: "b-31.jpg",
     alt: "Slide 4",
   },
 ];
@@ -179,7 +106,7 @@ const Slider = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
-    }, 3000); // Change slide every 5 seconds
+    }, 3000); // Change slide every 3 seconds
 
     return () => clearInterval(interval);
   }, []);
@@ -199,7 +126,7 @@ const Slider = () => {
             <img
               src={slide.src}
               alt={slide.alt}
-              className="w-full h-[430px] object-cover"
+              className="w-full h-[450px] object-cover"
             />
           </div>
         ))}

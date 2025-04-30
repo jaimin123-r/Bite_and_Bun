@@ -73,9 +73,11 @@ const CheckoutForm = ({ total, onCancel }) => {
 
 const Payment = ({ total, onCancel }) => {
   return (
-    <Elements stripe={stripePromise}>
+   <div className='mb-32'>
+     <Elements stripe={stripePromise}>
       <CheckoutForm total={total} onCancel={onCancel} />
     </Elements>
+   </div>
   );
 };
 
