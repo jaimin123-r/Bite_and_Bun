@@ -78,7 +78,7 @@ const Header = () => {
             >
               <LiaShoppingBagSolid size={28}/>
               {count > 0 && (
-                <span className="absolute -top-2 -right-2 bg-amber-600 text-white text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center">
+                <span className="absolute top-4 right-14 bg-amber-600 text-white text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center">
                   {count}
                 </span>
               )}
