@@ -97,7 +97,7 @@ const Footer = () => {
         animate={{ opacity: 1 }}
         transition={{ delay: 0.5, duration: 0.5 }}
       >
-        © 2024 Bite & Bun. All rights reserved.
+        © 2026 Bite & Bun. All rights reserved.
       </motion.div>
         </motion.div>
         

@@ -56,7 +56,7 @@ const Search = () => {
             
               <button
                 onClick={() => addToCart(item)}
-                className="bg-yellow-400 text-black font-bold md:py-2 md:px-4 p-2 rounded hover:bg-yellow-500 transition-colors duration-300"
+                className="bg-yellow-400 text-black text-sm md:py-2 md:px-2 p-2 rounded hover:bg-yellow-500 transition-colors duration-300"
               >
                 Add to Cart
               </button>

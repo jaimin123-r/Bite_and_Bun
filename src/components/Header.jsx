@@ -12,8 +12,8 @@ import {
 import { useCart } from "../context/CartContext.jsx";
 
 const Header = () => {
-  const { addToCart } = useCart();
-  const count = addToCart.cartCount;
+  const {cart} = useCart();
+  const count = cart.length;
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -187,7 +187,7 @@ const Header = () => {
               </SignedIn>
               <SignedOut>
                 <SignInButton mode="modal">
-                  <button className="bg-amber-500 hover:bg-amber-600 text-white px-4 py-2 rounded-full text-sm font-medium transition-colors duration-300 flex items-center">
+                  <button className="bg-yellow-400 hover:bg-amber-500 px-4 py-2 rounded-full text-sm font-medium transition-colors duration-300 flex items-center">
                     Sign In
                   </button>
                 </SignInButton>
