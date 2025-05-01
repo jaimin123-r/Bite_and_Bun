@@ -8,7 +8,7 @@ import {
 } from '@stripe/react-stripe-js';
 
 // You should replace this with your actual Stripe publishable key
-const stripePromise = loadStripe('pk_test_YOUR_PUBLISHABLE_KEY');
+const stripePromise = loadStripe('pk_test_51RJqf5PIUEAvfAsxZb8zqy8VUPpI2T4XVmbXpp2PE1jNP3KQ9xoDARWLJO0gUBKw1ReFSGdHkKYKqXdVHgQx5Vff00a7BuKQZV');
 
 const CheckoutForm = ({ total, onCancel }) => {
   const stripe = useStripe();
